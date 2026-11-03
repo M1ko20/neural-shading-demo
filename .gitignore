@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+neural_lab/.cache/
+neural_lab/*.png
+neural_lab/*_log.txt
+neural_lab/run_log.txt
+screenshot.png

@@ -1,0 +1,35 @@
+GPU: llvmpipe (LLVM 20.1.2, 256 bits) (Vulkan)
+lab_volume.slang compiled in 0.4 s
+  grid 16^3  step   501  neural  29.29 dB   same-bytes grid  29.36 dB
+  grid 16^3  step  1001  neural  29.76 dB   same-bytes grid  29.36 dB
+  grid 16^3  step  1501  neural  29.97 dB   same-bytes grid  29.36 dB
+  grid 16^3  step  2001  neural  30.21 dB   same-bytes grid  29.36 dB
+  grid 16^3  step  2501  neural  30.30 dB   same-bytes grid  29.36 dB
+  grid 16^3  step  3001  neural  30.48 dB   same-bytes grid  29.36 dB
+  grid 16^3  step  3501  neural  30.34 dB   same-bytes grid  29.36 dB
+  grid 16^3  step  4001  neural  30.58 dB   same-bytes grid  29.36 dB
+  grid 24^3  step   501  neural  30.95 dB   same-bytes grid  31.10 dB
+  grid 24^3  step  1001  neural  31.34 dB   same-bytes grid  31.10 dB
+  grid 24^3  step  1501  neural  31.51 dB   same-bytes grid  31.10 dB
+  grid 24^3  step  2001  neural  31.90 dB   same-bytes grid  31.10 dB
+  grid 24^3  step  2501  neural  31.94 dB   same-bytes grid  31.10 dB
+  grid 24^3  step  3001  neural  31.91 dB   same-bytes grid  31.10 dB
+  grid 24^3  step  3501  neural  31.86 dB   same-bytes grid  31.10 dB
+  grid 24^3  step  4001  neural  32.12 dB   same-bytes grid  31.10 dB
+  grid 32^3  step   501  neural  32.14 dB   same-bytes grid  34.95 dB
+  grid 32^3  step  1001  neural  32.47 dB   same-bytes grid  34.95 dB
+  grid 32^3  step  1501  neural  32.78 dB   same-bytes grid  34.95 dB
+  grid 32^3  step  2001  neural  32.89 dB   same-bytes grid  34.95 dB
+  grid 32^3  step  2501  neural  33.02 dB   same-bytes grid  34.95 dB
+  grid 32^3  step  3001  neural  33.07 dB   same-bytes grid  34.95 dB
+  grid 32^3  step  3501  neural  33.27 dB   same-bytes grid  34.95 dB
+  grid 32^3  step  4001  neural  33.23 dB   same-bytes grid  34.95 dB
+
+RESULTS (128^3 FP16 original = 4.0 MB)
+ grid  ratio   bytes    grid dB  neural dB   diff  compile s  train ms/step  dense ms  on-sample ms  on-load ms
+  16^3   117x     35KB    29.36     30.58   +1.22      71.6        57.811    100.49      5139.07    1154.59
+  24^3    37x    111KB    31.10     32.12   +1.02       0.1        58.071     93.44      4950.75    1057.04
+  32^3    16x    259KB    34.95     33.23   -1.72       0.1        63.215    101.16      5025.88    1097.03
+
+saved /tmp/claude-0/-home-claude/8fccf040-edfd-51f5-b9f6-4215105a6fe0/scratchpad/repo/neural_lab/test_demo7.png  (rows: grid 16/24/32; columns: original, same-bytes grid, neural)
+DONE
